@@ -8,7 +8,7 @@
 ## Objetivo:
 >El objetivo principal del proyecto es analizar, experimentar e implementar el extendible hash y el sequential file.
 
-**Métodos**
+## Métodos
 ```cpp
        vector<Registro> search(T key)
 ```
