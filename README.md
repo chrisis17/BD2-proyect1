@@ -59,6 +59,9 @@
    vector<TRecord> search(TKey begin, TKey end)
 ```
 **Remover**
->Para remover usamos las funcion **`erase()`** que permite ubicar el registro por key dentro de los archivos **`aux.dat`** y **`dat.dat`** se remueve y para mantener ordenada la data se hace de manera fisica un **`refactor()`** para mantener ordenada la data y mantener la referencia de los punteros luego de la remocion del registro
+>Para remover usamos las funcion **`erase()`** que permite ubicar el registro por key dentro de los archivos **`aux.dat`** y **`dat.dat`** se remueve y para mantener ordenada la data se hace de manera fisica un **`refactor()`** para mantener ordenada la data y mantener la referencia de los punteros luego de la remocion del registro. Además está función nos permite verificar si es posible remover o no en caso este vacio o de no existir el registro pedido por el usuario.
+```cpp
+   bool erase(TKey key)
+```
 **Extendible hash**
 > //TODO
