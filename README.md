@@ -63,8 +63,42 @@
 ```cpp
    bool erase(TKey key)
 ```
-**Extendible hash**
-> //TODO
+## Extendible hash
+**Estructura**
+
+```cpp
+template <typename TKey>
+class ExtendibleHash
+{
+private:
+    string fileName;
+    string indexName;
+    unordered_map<string, long> index;
+    unordered_map<string, long> index_size;
+    hash<TKey> _hash;
+    long freeListBucket = -1;
+    string hash_function(TKey key)
+    {
+        auto hash_code = _hash(key);
+        string hash_code_string = bitset<HASH_HEIGHT>(hash_code).to_string();
+        return hash_code_string;
+    }
+    void initIndex();
+    void readIndex();
+    void writeIndex();
+    void insertInFreeList(fstream &f, int &accesos);
+    void divideBucket(fstream &f, Bucket<TKey> &bucket, long pos, int &accesos);
+    bool exists(TKey key, int &accesos);
+    bool is_brother(string ref, string bro, long d);
+```
+
+**Inserción**
+
+**Búsqueda**
+
+**Búqueda por rangos**
+
+**Remover**
 
 **Gráficas**
 >//TODO
