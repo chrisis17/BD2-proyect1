@@ -34,7 +34,7 @@
 ```
 
 **Busqueda**
--Para este caso usamos el algoritmo **`binarySearch()`** este se usar para ubicar un registro en el archivo dado un valor busqueda, esto los hacemos en O(log(n))accesos a memoria secundaria. Además durante la busqueda si es que un archivo fue marcado como eliminado antes se descarta en la busqueda.
+#Para este caso usamos el algoritmo **`binarySearch()`** este se usar para ubicar un registro en el archivo dado un valor busqueda, esto los hacemos en O(log(n))accesos a memoria secundaria. Además durante la busqueda si es que un archivo fue marcado como eliminado antes se descarta en la busqueda.
 
  ```cpp
    TRecord *search(TKey key, int &accesos)
