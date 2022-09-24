@@ -1,5 +1,9 @@
 # BD2-proyect1
 
+<p align="center">
+<img width="460" height="300" src=
+https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/UTEC.jpg/600px-UTEC.jpg>
+</p>
 ## Integrantes:
       -Canto Vidal, Harold Alexis
       -Rojas Rojas, Christian Kevin
