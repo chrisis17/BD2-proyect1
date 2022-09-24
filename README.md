@@ -8,10 +8,10 @@
 # Objetivo:
 
        ```cpp
-            • vector<Registro> search(T key)
-            • vector<Registro> rangeSearch(T begin-key, T end-key) 
-            • bool remove(T key) 
-            • bool add(Registro registro)
+             vector<Registro> search(T key)
+             vector<Registro> rangeSearch(T begin-key, T end-key) 
+             bool remove(T key) 
+             bool add(Registro registro)
        ```
             
             
