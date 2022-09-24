@@ -33,13 +33,13 @@
     void insert(TRecord &record, int &accesos)
 ```
 
-**Busqueda**
+**Búsqueda**
 >Para este caso usamos el algoritmo **`binarySearch()`** este se usar para ubicar un registro en el archivo dado un valor busqueda, esto los hacemos en O(log(n))accesos a memoria secundaria. Además durante la busqueda si es que un archivo fue marcado como eliminado antes se descarta en la busqueda.
 
  ```cpp
    TRecord *search(TKey key, int &accesos)
 ```
-**Busqueda por rangos**
+**Búqueda por rangos**
 >Para la busqueda por rangos lo que hacemos es buscar ubicar donde está el begin y el end dentro de los archivos **`aux.dat`** y **`dat.dat`** y retornar los valores que estan dentro del invervalo sugerido verificando donde se ubican los elementos de manera ordenada por los punteros, ya que podria haber data que no esté dentro del mismo **`dat.dat`** si no que haya sido movido al **`aux.dat`** con su respectiva referencia.
 
  ```cpp
