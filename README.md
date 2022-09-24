@@ -127,6 +127,8 @@ private:
 | Hash | 1578| 3490| 5732| 7871| 8148|
 | Sequential | 2496| 20252| 30988| 28135|34365|
 
+>Observamos que el hash tiene una cantidad mucho menor en accesos a comparación del Sequential. Esto se debe a que el Dynamic hashing es mucho mśs eficiente para inserciones. Porque no requiere una búsqueda sequencial como en el Sequential.
+
 >Búsqueda
 
 | Cuadro comparativo | | | | | |
@@ -134,6 +136,8 @@ private:
 | Registros |500 | 1000| 1500| 2000| 2500|
 | Hash | 1| 1| 1| 1| 1|
 | Sequential |11 |11 |11 | 11| 11|
+
+>Observamos que los accesos son pocos en ambos. Sin embargo, otra vez Dynamic hashing resulta ser mejor por sus busquedas O(1), ya que solo es necesario aplicar la función hashing y acceder a la posición esperada. Por otro lado, Sequential tiene realizar una búsqueda binaria en el index file con complejidad O(logn), ambos son buenos, pero Dynamic Hashing es mejor.
 
 **Video**
 link: https://drive.google.com/file/d/1cLoQ44ux-m1oPGeKlAhTJ4XPEvKTtOMV/view?usp=sharing
