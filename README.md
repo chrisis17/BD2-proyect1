@@ -6,8 +6,7 @@
       -Zapata Gallegos, Neo Marcelo
 
 # Objetivo:
-- help.
-
+- help
       >Metodos
        ```cpp
             • vector<Registro> search(T key)
