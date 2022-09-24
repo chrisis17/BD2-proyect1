@@ -1,14 +1,14 @@
 # BD2-proyect1
 
-# Integrantes:
+## Integrantes:
       -Canto Vidal, Harold Alexis
       -Rojas Rojas, Christian Kevin
       -Zapata Gallegos, Neo Marcelo
 
-# Objetivo:
+## Objetivo:
 -El objetivo principal del proyecto es analizar y experimentar sobre los accesos a memoria secundaria que hacen en el extendible hash y en el sequential file.
 
-     **METODOS**
+**Metodos**
       ```cpp
              vector<Registro> search(T key)
              vector<Registro> rangeSearch(T begin-key, T end-key) 
