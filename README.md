@@ -7,21 +7,6 @@
 
 ## Objetivo:
 >El objetivo principal del proyecto es analizar, experimentar e implementar el extendible hash y el sequential file.
->
-## Sequential File
-**Estructura**
-```cpp
-    template <typename TRecord, typename TKey>
-    class Sequential
-      {
-      private:
-    string fileName;
-    string auxName;
-    long sizeData = 0;
-    long sizeAux = 0;
-
-    const long sizeRecord = sizeof(TRecord);
-```
 
 **Métodos**
 ```cpp
@@ -38,7 +23,22 @@
 
 ```cpp
       bool add(Registro registro)
-```           
+```   
+
+## Sequential File
+**Estructura**
+```cpp
+    template <typename TRecord, typename TKey>
+    class Sequential
+      {
+      private:
+    string fileName;
+    string auxName;
+    long sizeData = 0;
+    long sizeAux = 0;
+
+    const long sizeRecord = sizeof(TRecord);
+```        
 **Inserción**
 >Para la insertion hacemos empleo de la función  **`insideSearch()`** que nos permite usar nuestro **`binarySearch()`** lo que hace que hagamos O (log(n)) accesos a memoria secundaria. Luego, localizamos la posición donde será insertado el nuevo registro, si es que el espacio está libre, entonces insertamos, si no insertarmos el resgitro en el  **`aux.dat`** que es nuestro espacio auxiliar. Seguido de esto actualizamos los punteros.
 
