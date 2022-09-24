@@ -5,7 +5,7 @@
       -Rojas Rojas, Christian Kevin
       -Zapata Gallegos, Neo Marcelo
 
-# Objetivo:
+## Objetivo:
 -El objetivo principal del proyecto es analizar y experimentar sobre los accesos a memoria secundaria que hacen en el extendible hash y en el sequential file.
 
 **Metodos**
@@ -23,10 +23,8 @@
 
 ```cpp
       bool add(Registro registro)
-```
-
-            
->Inserción
+```           
+##Inserción
 -Para la insertion hacemos empleo de la función  **`insideSearch()`** que nos permite usar nuestro **`binarySearch()`** lo que hace que hagamos O (log(n)) accesos a memoria secundaria. Luego, localizamos la posición donde será insertado el nuevo registro, si es que el espacio está libre, entonces insertamos, si no insertarmos el resgitro en el  **`aux.dat`** que es nuestro espacio auxiliar. Seguido de esto actualizamos los punteros.
 
  ```cpp
