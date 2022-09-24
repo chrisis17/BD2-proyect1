@@ -38,9 +38,11 @@
    TRecord *search(TKey key, int &accesos)
 ```
 **Busqueda por rangos**
->Para la busqueda por rangos lo que hacemos es buscar ubicar donde está el begin y el end dentro de los archivos **`aux.dat`** y **`dat.dat`** y retornar los valores que estan dentro del invervalo sugerido.
+>Para la busqueda por rangos lo que hacemos es buscar ubicar donde está el begin y el end dentro de los archivos **`aux.dat`** y **`dat.dat`** y retornar los valores que estan dentro del invervalo sugerido verificando donde se ubican los elementos de manera ordenada por los punteros, ya que podria haber data que no esté dentro del mismo **`dat.dat`** si no que haya sido movido al **`aux.dat`** con su respectiva referencia.
 
  ```cpp
    vector<TRecord> search(TKey begin, TKey end)
 ```
+**Remover**
+>Para remover usamos las funcion **`erase()`** que permite ubicar el registro por key dentro de los archivos **`aux.dat`** y **`dat.dat`** se remueve y para mantener ordenada la data se hace de manera fisica un **`refactor()`** para mantener ordenada la data y mantener la referencia de los punteros luego de la remocion del registro
 
