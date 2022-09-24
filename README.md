@@ -9,12 +9,10 @@
 -El objetivo principal del proyecto es analizar y experimentar sobre los accesos a memoria secundaria que hacen en el extendible hash y en el sequential file.
 
       >Metodos
-       ```cpp
             • vector<Registro> search(T key)
             • vector<Registro> rangeSearch(T begin-key, T end-key) 
             • bool remove(T key) 
             • bool add(Registro registro)
-       ```
             
             
 **Insertion**   
