@@ -65,3 +65,9 @@
 ```
 **Extendible hash**
 > //TODO
+
+**Gráficas**
+>//TODO
+
+**Conclusiones**
+>//TODO
