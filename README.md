@@ -1,7 +1,7 @@
 # BD2-proyect1
 
 <p align="center">
-<img width="460" height="300" src=
+<img width="460" height="350" src=
 https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/UTEC.jpg/600px-UTEC.jpg>
 </p>
 ## Integrantes:
