@@ -10,7 +10,7 @@
 >
 ## Sequential File
 
-**Metodos**
+**Métodos**
 ```cpp
        vector<Registro> search(T key)
 ```
