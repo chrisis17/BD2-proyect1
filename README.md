@@ -12,7 +12,7 @@ https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/UTEC.jpg/600px-UTEC.jp
 
 ## Objetivo:
 >El objetivo principal del proyecto es analizar, experimentar e implementar el extendible hash y el sequential file.
-
+(El link del video se encuentra al final)
 ## Métodos
 ```cpp
        vector<Registro> search(T key)
@@ -135,5 +135,6 @@ private:
 | Hash | 1| 1| 1| 1| 1|
 | Sequential |11 |11 |11 | 11| 11|
 
-**Conclusiones**
->//TODO
+**Video**
+link: https://drive.google.com/file/d/1cLoQ44ux-m1oPGeKlAhTJ4XPEvKTtOMV/view?usp=sharing
+
