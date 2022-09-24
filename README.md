@@ -10,7 +10,7 @@
 
 **Metodos**
 ```cpp
-        vector<Registro> search(T key)
+       vector<Registro> search(T key)
 ```
 
 ```cpp
@@ -39,3 +39,11 @@
  ```cpp
    TRecord *search(TKey key, int &accesos)
 ```
+
+**Busqueda por rangos**
+-Para la busqueda por rangos lo que hacemos es buscar ubicar donde está el begin y el end dentro de los archivos **`aux.dat`** y **`dat.dat`** y retornar los valores que estan dentro del invervalo sugerido.
+
+ ```cpp
+   vector<TRecord> search(TKey begin, TKey end)
+```
+
