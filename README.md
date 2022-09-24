@@ -6,7 +6,7 @@
       -Zapata Gallegos, Neo Marcelo
 
 ## Objetivo:
->El objetivo principal del proyecto es analizar y experimentar sobre los accesos a memoria secundaria que hacen en el extendible hash y en el sequential file.
+>El objetivo principal del proyecto es analizar, experimentar e implementar el extendible hash y el sequential file.
 >
 ## Sequential File
 **Estructura**
