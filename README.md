@@ -98,12 +98,25 @@ private:
 ```
 
 **Inserción**
+>Para la inserción aplicamos la función **`hash_function(key)`** sobre el key, que nos retorna una posición en el archivo Index.dat, Index.dat retorna la posición física donde insertaremos el registro en el archivo Data.dat. Luego se accede a esa posición y existen 2 posibilidades, la primera es que no exista un Bucket (conjunto de registros), en ese caso creamos uno e insertamos el registro en el nuevo bucket (tomando 2 accesos extra), el segundo caso es que ya exista un bucket, entonces revisamos si hay espacio en el bucket para insertar, caso contrario creamos un nuevo bucket, lo enlazamos e insertamos el registro en el nuevo bucket. (De esta forma la estructura crece dinámicamente, porque creamos nuevos buckets según sea necesario.
+
+```cpp
+    void insert(RecordHash<TKey> record, int &accesos)
+```
 
 **Búsqueda**
+>Para realizar el search, se utiliza la función **`hash_function(key)`** sobre la llave, de esta forma se obtiene la posición del registro en el archivo Data.dat, accedemos a esa posición en el archivo de datos. Si no encontramos un bucket (pos = -1) entonces no existe el registro. Caso contrario, se carga el bucket a memoria principal y se recorre de forma sequencial junto con todos los buckets enlazados hasta encontrar el registro en cuestión o llegar al final de la lista de buckets enlazados.
 
-**Búqueda por rangos**
+```cpp
+    RecordHash<TKey> *search(TKey key, int &accesos)
+```
 
 **Remover**
+>Para realiza el erase, se realiza una búsqueda y se elimina el registro del bucket dejando un espacio vacío en el bucket, y se presentan los siguientes casos. Si es el último bucket (de la lista enlazada de buckets) no hay problema. Caso contrario, tenemos que mover el último registro del último bucket en la lista enlazada a la posición que hemos dejado vacía. De esta forma, solo quedaría revisar el último bucket de la lista, si está vacío se elimina, caso contrario se deja como esta. De esta forma, se cumple la naturaleza del Dynamic hashing, de crecer y reducir su tamaño conforme se inserten o eliminen registros.
+
+```cpp
+    bool erase(TKey key)
+```
 
 **Gráficas**
 >//TODO
