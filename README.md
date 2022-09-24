@@ -9,9 +9,10 @@
 >El objetivo principal del proyecto es analizar y experimentar sobre los accesos a memoria secundaria que hacen en el extendible hash y en el sequential file.
 >
 ## Sequential File
+**Estructura
 ```cpp
-      template <typename TRecord, typename TKey>
-      class Sequential
+    template <typename TRecord, typename TKey>
+    class Sequential
       {
       private:
     string fileName;
