@@ -6,21 +6,20 @@
       -Zapata Gallegos, Neo Marcelo
 
 # Objetivo:
+-El objetivo principal del proyecto es analizar y experimentar sobre los accesos a memoria secundaria que hacen en el extendible hash y en el sequential file.
+
       >Metodos
+       ```cpp
             • vector<Registro> search(T key)
             • vector<Registro> rangeSearch(T begin-key, T end-key) 
             • bool remove(T key) 
             • bool add(Registro registro)
+       ```
             
-**Casos de uso**       
+            
+**Insertion**   
+-Para la insertion hacemos empleo de la función  **`insideSearch()`** que nos permite usar nuestro **`binarySearch()`** lo que hace que hagamos N log(n) accesos a memoria secundaria. Luego, localizamos la posición donde será insertado el nuevo registro, si es que el espacio está libre, entonces insertamos, si no insertarmos el resgitro en el  **`aux.dat`** que es nuestro espacio auxiliar. Seguido de esto actualizamos los punteros.
+
  ```cpp
-    int n = 0;
-    cin >> n;
-    list<unsigned long long int> fs(n);
-    get_fibonacci(fs);
-    auto current = begin(fs);
-    cout << *current++;
-    while(current != end(fs))
-      cout << " " << *current++;
-    cout << endl;
+    void insert(TRecord &record, int &accesos)
 ```
